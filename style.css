@@ -1,47 +1,169 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
-
 * {
-  margin: 0;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-  background-image: url(https://i.pinimg.com/564x/d9/76/8f/d9768f052b88b893dcb3a35224867852.jpg);
-  /* Centramos el fondo horizontal y verticalmente */
-  background-position: center center;
-  /* El fonde no se repite */
-  background-repeat: no-repeat;
-  /* Fijamos la imagen a la ventana para que no supere el alto de la ventana */
-  background-attachment: fixed;
-  /* El fonde se re-escala automáticamente */
-  background-size: cover;
-  /* Color de fondo si la imagen no se encuentra o mientras se está cargando */
-  background-color: #fff;
-  /* Fuente para el texto */
+  background-color: rgb(29, 29, 29);
+}
+h1.separador {
+  position: absolute;
+  height: 33.19px;
+  left: 50%;
+  top: 45%;
+  opacity: 45%;
   text-align: center;
-  color: #000;
+  text-decoration: none;
+  color: #ffffff;
 }
 
-.bg-color {
+/*HEADER*/
+header {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  height: 120px;
+  left: 0px;
+  top: 0px;
   background: #030303;
 }
 
-img.barra-colores {
+img.logo {
+  max-width: 277;
+  max-height: 100px;
+  position: absolute;
+  top: 18%;
+  left: 2%;
+  cursor: pointer;
+}
+
+img.lineadecolores {
   position: absolute;
   width: 100%;
   height: 10px;
   left: 0px;
   top: 98%;
 }
-
-.logo {
-  width: 200px;
-  list-style: none;
+a,
+span,
+button {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: #ffffff;
 }
 
-.nav-item {
+a.navbar {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  font-size: 23px;
+  line-height: 29px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
 }
 
-.white {
-  color: #fff;
+a.navbar.personas {
+  left: 40%;
+}
+a.empresa {
+  left: 53%;
+}
+
+a.navbar:hover {
+  color: #3a82ff;
+  cursor: pointer;
+}
+
+/* BOTONES */
+
+button.bar {
+  cursor: pointer;
+  position: absolute;
+  width: 8%;
+  height: 50%;
+  left: 82%;
+  top: 32%;
+  background-color: #1c63a3;
+}
+button.bar:hover {
+  background-color: #3a82ff;
+}
+
+img.hamburguesa {
+  position: absolute;
+  width: 2, 9%;
+  height: 30%;
+  left: 93%;
+  top: 42%;
+}
+img.hamburguesahover {
+  position: absolute;
+  width: 2, 9%;
+  height: 30%;
+  left: 93%;
+  top: 42%;
+}
+
+img.hamburguesa:hover {
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  height: 8%;
+  bottom: 0px;
+  background: #ffffff;
+}
+
+div.divfooter {
+  position: absolute;
+  bottom: 48%;
+  height: 1%;
+  left: 2%;
+  width: 86%;
+  background-color: #e2e2e2;
+}
+div.line {
+  position: absolute;
+  bottom: 31%;
+  height: 25px;
+  left: 93%;
+  width: 1px;
+  background-color: gray;
+}
+a.afooter.languages {
+  color: gray;
+  position: absolute;
+  bottom: 35%;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+a.afooter.languages.español {
+  left: 89%;
+}
+a.afooter.languages.ingles {
+  left: 94%;
+}
+img.footerline {
+  width: 100%;
+  height: 10px;
+  bottom: 100%;
+}
+
+a.afooter.languages:hover {
+  color: #252525;
+  cursor: pointer;
 }
