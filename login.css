@@ -69,6 +69,15 @@ form {
   border-radius: 18px;
 }
 
+.cambiar-clave {
+  margin-top: 250px;
+  width: 600px;
+  height: 520px;
+  background: #fff;
+  box-shadow: 9px 9px 9px rgba(0, 0, 0, 0.25);
+  border-radius: 18px;
+}
+
 .olvide-clave,
 .soy-usuario {
   font-size: 18px;
