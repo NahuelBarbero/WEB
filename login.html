@@ -1,43 +1,165 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="style.css" rel="stylesheet" type="text/css"> </link>
-    <link href="stylelogin.css" rel="stylesheet" type="text/css"> </link>
-  <header>
-        <a href="index.html"> <img class="logo" src="images/LOGO.png"> </a>
-        <img class="lineadecolores" src="images/linea-de-colores.png" >
-      <!-- boton hamburguesa-->
-        <img class="hamburguesahover" src="images/hamburguesahover.png"></img>
-        <img class="hamburguesa" src="images/hamburguesa.png" ></img>
-    </header>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./login.css">
+</head>
 
-  </head>
-  <body>
-    <div class="login">
-      <div class="frame">
-       
-        <p class="textologin">¡BIENVENIDO! Elegí como ingresar</p>
-        
-         <input id="selectbox"></input>
+<body>
+    <!--NAVBAR-->
+    <nav class="navbar bg-color ">
+        <a href="index.html"><img class="logo" src="./images/LOGO.png" alt="" class="d-inline-block align-text-top"></a>
+        <div><img class="barra-colores" src="./images/linea-de-colores.png" alt="">
+        </div>
+    </nav>
 
-         <p id=""
-        <input id="idlogin"></input>
-        <input id="clave"></input>
-      </div>
+    <!--LOGIN-->
+
+
+    <div class="row">
+        <div class="col-12">
+            <div class="login container p-4 md-5 bg-light">
+                <div class="row align-items-stretch">
+                    <div class="col p-5">
+                        <h2 class="fw-bold text-center">INICIAR SESION</h2>
+                        <!--Forms-->
+                        <form action="#">
+                            <div class="mb-4">
+                                <label for="user" class="form-label">Elige la forma de iniciar sesión</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Usuario</option>
+                                    <option value="1">DNI</option>
+                                    <option value="2">Pasaporte</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <label for="user" class="form-label">Identificación</label>
+                                <input type="user" class="form-control" name="user">
+                            </div>
+                            <div class="mb-4">
+                                <label for="password" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" name="passwpord">
+                            </div>
+                            <div class="mb-3 text-center align-content-lg-center boton-sesion">
+                                <a href="./register.html" class="btn btn-secondary registrarse">
+                                    REGISTRARTE</a>
+
+                                <button class="btn btn-primary my-3 inicio-sesion" type="submit">INICIAR
+                                    SESION</button>
+                            </div>
+                            <a href="./recuperar-clave.html" class="olvide-clave">Olvide mi clave</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-     <footer>
-        <div class="divfooter"></div>
-       
-      
-        <span><a class="afooter languages español" href="#">Español</a></span> 
-         <div class="line"></div>
-        <span><a class="afooter languages ingles"href="#">English</a></span>
-       
-     <img class="footerline" src="images/linea-de-colores.png" ></img>
-   </footer>
-  </body>
+    <div class="espacio"></div>
+    <!-- Footer -->
+    <footer class="footer text-center text-lg-start bg-light text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Right -->
+            <div>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>Horarios de atención
+                        </h6>
+                        <p>
+                            Lunes a Viernes - 09:00hs a 20:00hs
+                            Sábado - 09:00hs a 12:00hs
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Links de ayuda
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Cuenta</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Configuración</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Tarjetas</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Ayuda</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contactanos
+                        </h6>
+                        <p><i class="fas fa-home me-3"></i>Iguazú 341, C1437 CABA</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            info@itbank.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> 0810-222-4822</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+
+        <!-- Copyright -->
+        <div class="text-left p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            <p>
+                <span>© 2022 Banco ITBANK S.A. Todos
+                    los
+                    derechos Reservados.</span>
+                <span class="idiomas"><a href="#">Español</a> | <a href="#">English</a></span>
+
+            </p>
+        </div>
+    </footer>
+</body>
+<script src="./bootstrap.bundle.min.js"></script>
+
 </html>

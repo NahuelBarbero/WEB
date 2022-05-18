@@ -6,15 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./bootstrap.min.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/bootstrap.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/login.css">
 </head>
 
 <body>
 
     <nav class="navbar bg-color ">
         <div class="container-fluid">
-            <img class="logo" src="./images/LOGO.png" alt="" class="d-inline-block align-text-top">
+            <img class="logo" src="/images/LOGO.png" alt="" class="d-inline-block align-text-top">
             <a class="navbar-brand" href="#">
 
             </a>
@@ -43,10 +44,54 @@
             </div>
         </div>
 
-        <div><img class="barra-colores" src="./images/linea-de-colores.png" alt="">
+        <div><img class="barra-colores" src="/images/linea-de-colores.png" alt="">
         </div>
     </nav>
 
+    <!--LOGIN-->
+
+
+    <div class="row">
+        <div class="col-12">
+            <div class="register container p-4 md-5 bg-light">
+                <div class="row align-items-stretch">
+                    <div class="col p-5">
+                        <h2 class="fw-bold text-center">REGISTRARSE</h2>
+                        <!--Forms-->
+                        <form action="#">
+                            <div class="mb-4">
+                                <label for="user" class="form-label">Nombre de Usuario</label>
+                                <input type="user" class="form-control" name="user">
+                            </div>
+                            <div class="mb-4">
+                                <label for="user" class="form-label">Email</label>
+                                <input type="email" class="form-control" name="user">
+                            </div>
+                            <div class="mb-4">
+                                <label for="password" class="form-label">DNI</label>
+                                <input type="password" class="form-control" name="passwpord">
+                            </div>
+                            <div class="mb-4">
+                                <label for="password" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" name="passwpord">
+                            </div>
+                            <div class="mb-4">
+                                <label for="password" class="form-label">Repite tu Contraseña</label>
+                                <input type="password" class="form-control" name="passwpord">
+                            </div>
+
+                            <div class="mb-3 text-center align-content-lg-center boton-sesion">
+                                <button class="btn btn-primary my-3" type="submit">REGISTRARSE</button>
+                            </div>
+                            <a href="/login.html" class="soy-usuario">Ya tengo una cuenta</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="espacio"></div>
 
     <!-- Footer -->
     <footer class="footer text-center text-lg-start bg-light text-muted">
@@ -149,6 +194,6 @@
     <!-- Footer -->
 </body>
 
-<script src="./bootstrap.bundle.min.js"></script>
+<script src="/bootstrap.bundle.min.js"></script>
 
 </html>

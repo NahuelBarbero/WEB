@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #101517;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  overflow-x: hidden;
+}
+
+.bg-color {
+  background: #101517;
+}
+
+img.barra-colores {
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  left: 0px;
+  top: 98%;
+}
+
+.logo {
+  width: 200px;
+  list-style: none;
+}
+
+.white {
+  color: #fff;
+}
+
+form {
+  margin-top: 60px;
+}
+
+.inicio-sesion {
+  margin-left: 90px;
+}
+
+.registrarse {
+  margin-left: 20px;
+}
+
+.boton-sesion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login.container {
+  margin-top: 250px;
+  width: 600px;
+  height: 600px;
+  background: #fff;
+  box-shadow: 9px 9px 9px rgba(0, 0, 0, 0.25);
+  border-radius: 18px;
+}
+
+.register.container {
+  margin-top: 250px;
+  width: 600px;
+  height: 520px;
+  background: #fff;
+  box-shadow: 9px 9px 9px rgba(0, 0, 0, 0.25);
+  border-radius: 18px;
+}
+
+.olvide-clave,
+.soy-usuario {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  text-decoration-line: underline;
+}
+
+.footer {
+  text-align: center;
+  margin-top: auto;
+  width: 100%;
+}
+
+.espacio {
+  padding: 100px;
+}
+
+.idiomas {
+  margin-left: 70%;
+  margin-bottom: 0;
+}
+
+.contactos {
+  margin-top: -10px;
+  margin-left: 150px;
+  font-weight: 650;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 350px;
+  }
+}
+
+/*
+.contenedor-1 {
+  position: relative;
+  margin-right: 50%;
+  margin-left: 50%;
+}
+*/
