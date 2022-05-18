@@ -2,40 +2,54 @@
 
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 html {
+  min-height: 100%;
+  position: relative;
+}
+body {
   background-image: url(images/background.jpg);
-  /* Centramos el fondo horizontal y verticalmente */
   background-position: center center;
-  /* El fonde no se repite */
   background-repeat: no-repeat;
-  /* Fijamos la imagen a la ventana para que no supere el alto de la ventana */
-  background-attachment: fixed;
-  /* El fonde se re-escala automáticamente */
   background-size: cover;
-  /* Color de fondo si la imagen no se encuentra o mientras se está cargando */
-  background-color: #5590c7;
-  /* Fuente para el texto */
-  text-align: center;
-  color: #000;
+  background-attachment: fixed;
+  display: grid;
+  margin: 0;
+  margin-bottom: 40px;
+  overflow-x: hidden;
+}
+footer {
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: white;
 }
 
 .bg-color {
   background: #030303;
 }
 
-.barra-colores {
+img.barra-colores {
   position: absolute;
   width: 100%;
   height: 10px;
   left: 0px;
-  padding: 0%;
+  top: 98%;
+}
+img.barra-coloresdown {
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  left: 0px;
+  bottom: 100%;
 }
 
 .container-fluid {
-  padding: 0% 2% 0%;
+  padding: 0% 3% 0%;
 }
 
 .logo {
@@ -43,6 +57,19 @@ html {
   list-style: none;
 }
 
+/* botones */
+.btnpersonas {
+  right: 0px;
+}
+
+@media (max-width: 675px) {
+  .btpersonas,
+  .btempresas,
+  .btingresar,
+  .btcliente {
+    display: none;
+  }
+}
 /* COLUMNAS DEL DESPLEGABLE */
 
 .navbar-collapse.collapse.show {
@@ -83,4 +110,14 @@ p.subtitulo {
 
 li {
   list-style: none;
+}
+/*CUERPO*/
+
+.espacio {
+  height: 100vh;
+}
+
+.idiomas {
+  margin-left: 70%;
+  margin-bottom: 3%;
 }

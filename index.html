@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./recursos/bootstrap.min.css" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./login.css" />
     <link rel="stylesheet" href="./general.css" />
   </head>
 
@@ -16,7 +17,9 @@
     <header>
       <!-- NAVBAR -->
       <nav class="navbar bg-color">
+    
         <!-- LOGO -->
+        
         <div class="container-fluid" >
          <a href="./index.html">
           <img
@@ -24,28 +27,42 @@
             src="./images/LOGO.png"
             class="d-inline-block align-text-top"
           />
-         </a>
-          <a class="navbar-brand" href="#"> </a>
-          <div>
-            <!-- BOTON DEL DESPLEGABLE -->
-            <button
-              class="navbar-toggler bg-dark"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
+           </a>
+            <!-- BOTONES NAV -->
+
+              <a type="button" class="btn btn-outline-light btpersonas" href="#">Personas</a>
+              <a type="button" class="btn btn-outline-light btempresas" href="#">Empresas</a>
+              <a type="button" class="btn btn-outline-light btingresar" href="./login.html">Ingresar</a>
+              <a type="button" class="btn btn-outline-primary btcliente" href="./register.html">Hacete Cliente</a>
+             
+        
+          <!-- BOTON DEL DESPLEGABLE -->
+            <div>   
+              <button
+                class="navbar-toggler bg-dark"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+        </div>
+        
+        <div>
+          <img
+            class="barra-colores"
+            src="./images/linea-de-colores.png"
+            alt=""
+          />
         </div>
       </nav>
-      <img class="barra-colores" src="./images/linea-de-colores.png" alt="" />
     </header>
     <!-- FIN DE HEADER -->
-    <!-- DESPLEGABLE -->
+    
+    <!-- INICIO DESPLEGABLE -->
     <div class="collapse navbar-collapse" id="navbarNav" >
         <div class="row">
           <!-- ------1era columna del desplegable--- -->
@@ -94,6 +111,90 @@
       </div>
 
     <!-- FIN DESPLEGABLE -->
-  </body>
-  <script src="./recursos/bootstrap.bundle.min.js"></script>
+
+        <div>
+   
+
+    <!-- Footer -->
+
+    <div class="espacio">
+      
+    </div>
+
+    <footer class="footer text-center text-lg-start bg-light text-muted">
+
+        <!-- Section: Links  -->
+        <section class="">
+          <img class="barra-coloresdown" src="./images/linea-de-colores.png" alt="">
+            <div class="container text-center text-md-start mt-1">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>Horarios de atención
+                        </h6>
+                        <p>
+                            Lunes a Viernes - 09:00hs a 20:00hs
+                            Sábado - 09:00hs a 12:00hs
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Links de ayuda
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Cuenta</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Configuración</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Tarjetas</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Ayuda</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contactanos
+                        </h6>
+                        <p><i class="fas fa-home me-3"></i>Iguazú 341, C1437 CABA</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            info@itbank.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> 0810-222-4822</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Copyright -->
+        <div class="text-left p-1" style="background-color: rgba(0, 0, 0, 0.05);">
+            <p>
+                <span>© 2022 Banco ITBANK S.A. Todos
+                    los
+                    derechos Reservados.</span>
+                <span class="idiomas"><a href="#">Español</a> | <a href="#">English</a></span>
+
+            </p>
+        </div>
+    </footer>
+    <!-- Footer -->
+</body>
+
+<script src="./recursos/bootstrap.bundle.min.js"></script>
+
 </html>

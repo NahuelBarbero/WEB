@@ -5,14 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./recursos/bootstrap.min.css" />
-    <link rel="stylesheet" href="./login.css" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="/recursos/bootstrap.min.css" />
     <link rel="stylesheet" href="./general.css" />
+    <link rel="stylesheet" href="./login.css" />
   </head>
-  <!-- ---BODY----- -->
-  <body class>
-    <!-- HEADER -->
+
+  <body>
     <header>
       <!-- NAVBAR -->
       <nav class="navbar bg-color">
@@ -25,6 +23,7 @@
               class="d-inline-block align-text-top"
             />
           </a>
+
           <a class="navbar-brand" href="#"> </a>
           <div>
             <!-- BOTON DEL DESPLEGALE -->
@@ -106,61 +105,38 @@
     </div>
 
     <!-- FIN DESPLEGABLE -->
-
     <!--LOGIN-->
+
     <div class="row">
       <div class="col-12">
-        <div class="login container p-4 md-5 bg-light">
+        <div class="cambiar-clave container p-4 md-5 bg-light">
           <div class="row align-items-stretch">
             <div class="col p-5">
-              <h2 class="fw-bold text-center">INICIAR SESION</h2>
+              <h2 class="fw-bold text-center">CAMBIAR CLAVE</h2>
               <!--Forms-->
               <form action="#">
                 <div class="mb-4">
-                  <label for="user" class="form-label"
-                    >Elige la forma de iniciar sesión</label
-                  >
-                  <select
-                    class="form-select"
-                    aria-label="Default select example"
-                  >
-                    <option selected>Usuario</option>
-                    <option value="1">DNI</option>
-                    <option value="2">Pasaporte</option>
-                  </select>
-                </div>
-                <div class="mb-4">
-                  <label for="user" class="form-label">Identificación</label>
-                  <input type="user" class="form-control" name="user" />
-                </div>
-                <div class="mb-4">
-                  <label for="password" class="form-label">Contraseña</label>
-                  <input
-                    type="password"
-                    class="form-control"
-                    name="passwpord"
-                  />
+                  <label for="user" class="form-label">Email</label>
+                  <input type="email" class="form-control" name="email" />
                 </div>
                 <div
                   class="mb-3 text-center align-content-lg-center boton-sesion"
                 >
-                  <a
-                    href="./register.html"
-                    class="btn btn-secondary registrarse"
-                  >
-                    REGISTRARTE</a
-                  >
-
-                  <button
-                    class="btn btn-primary my-3 inicio-sesion"
-                    type="submit"
-                  >
-                    INICIAR SESION
+                  <button class="btn btn-primary my-3" type="submit">
+                    ENVIAR
                   </button>
                 </div>
-                <a href="./recuperar-clave.html" class="olvide-clave"
-                  >Olvide mi clave</a
-                >
+                <div class="mb-4">
+                  <p>
+                    En caso de no tener acceso al Email puede comunicarse con
+                    los siguientes contactos:
+                  </p>
+                  <p class="contactos">
+                    info@itbank.com
+                    <br />
+                    0810-222-4822
+                  </p>
+                </div>
               </form>
             </div>
           </div>
@@ -169,43 +145,18 @@
     </div>
 
     <div class="espacio"></div>
+
     <!-- Footer -->
     <footer class="footer text-center text-lg-start bg-light text-muted">
-      <!-- Section: Social media -->
-      <section
-        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
-      >
-        <!-- Right -->
-        <div>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-google"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="" class="me-4 text-reset">
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
-        <!-- Right -->
-      </section>
-      <!-- Section: Social media -->
-
       <!-- Section: Links  -->
+      <img
+        class="barra-coloresdown"
+        src="./images/linea-de-colores.png"
+        alt=""
+      />
       <section class="">
         <div class="container text-center text-md-start mt-5">
-          <!-- Grid row -->
           <div class="row mt-3">
-            <!-- Grid column -->
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
               <!-- Content -->
               <h6 class="text-uppercase fw-bold mb-4">
@@ -215,9 +166,6 @@
                 Lunes a Viernes - 09:00hs a 20:00hs Sábado - 09:00hs a 12:00hs
               </p>
             </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
               <!-- Links -->
               <h6 class="text-uppercase fw-bold mb-4">Links de ayuda</h6>
@@ -234,9 +182,6 @@
                 <a href="#!" class="text-reset">Ayuda</a>
               </p>
             </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
               <!-- Links -->
               <h6 class="text-uppercase fw-bold mb-4">Contactanos</h6>
@@ -247,9 +192,7 @@
               </p>
               <p><i class="fas fa-phone me-3"></i> 0810-222-4822</p>
             </div>
-            <!-- Grid column -->
           </div>
-          <!-- Grid row -->
         </div>
       </section>
 
@@ -263,6 +206,8 @@
         </p>
       </div>
     </footer>
+    <!-- Footer -->
   </body>
-  <script src="./recursos/bootstrap.bundle.min.js"></script>
+
+  <script src="/recursos/bootstrap.bundle.min.js"></script>
 </html>
