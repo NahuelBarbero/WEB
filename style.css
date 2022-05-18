@@ -12,3 +12,7 @@
   z-index: 0;
   position: absolute;
 }
+
+.carousel-item {
+  max-height: 700px;
+}
