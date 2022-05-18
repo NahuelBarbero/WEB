@@ -84,3 +84,16 @@ p.subtitulo {
 li {
   list-style: none;
 }
+
+.mapa-phone {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .mapa-desktop {
+    display: none;
+  }
+  .mapa-phone {
+    display: initial;
+  }
+}
